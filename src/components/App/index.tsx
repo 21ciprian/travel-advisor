@@ -1,11 +1,13 @@
 import React from 'react'
-import Header from '../Header'
+import HeaderComponent from '../Header'
+import Map from '../Map'
 import './App.css'
 
 function App() {
 	return (
 		<article className='app'>
-			<Header />
+			<HeaderComponent />
+			<Map />
 		</article>
 	)
 }
