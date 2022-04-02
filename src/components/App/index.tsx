@@ -1,13 +1,17 @@
 import React from 'react'
 import HeaderComponent from '../Header'
+import List from '../List'
 import Map from '../Map'
-import './App.css'
+import {GridContainer} from './styles'
 
 function App() {
 	return (
 		<article className='app'>
 			<HeaderComponent />
-			<Map />
+			<GridContainer>
+				<List />
+				<Map />
+			</GridContainer>
 		</article>
 	)
 }

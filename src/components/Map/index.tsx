@@ -1,4 +1,4 @@
-import GoogleMapReact from 'google-map-react'
+// import GoogleMapReact from 'google-map-react'
 import React from 'react'
 import {MapSection} from './styles'
 // import {LocationOnOutlined} from '@mui/icons-material'
@@ -16,11 +16,11 @@ function Map({}: Props) {
 	console.log(defaultProps)
 	return (
 		<MapSection>
-			<GoogleMapReact
+			{/* <GoogleMapReact
 				bootstrapURLKeys={{key: `${process.env.REACT_APP_API_KEY}`}}
 				defaultCenter={defaultProps.center}
 				defaultZoom={defaultProps.zoom}
-				margin={[50, 50, 50, 50]}></GoogleMapReact>
+				margin={[50, 50, 50, 50]}></GoogleMapReact> */}
 		</MapSection>
 	)
 }
