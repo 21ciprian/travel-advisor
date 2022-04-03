@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {getPlacesData} from '../../api/index'
+import {PlacesProvider} from '../../context/PlacesContext'
 import HeaderComponent from '../Header'
 import List from '../List'
 import Map from '../Map'
@@ -15,13 +16,15 @@ function App(): JSX.Element {
 		})
 	}, [])
 	return (
-		<article className='app'>
-			<HeaderComponent />
-			<GridContainer>
-				<List />
-				<Map />
-			</GridContainer>
-		</article>
+		<PlacesProvider>
+			<article className='app'>
+				<HeaderComponent />
+				<GridContainer>
+					<List />
+					<Map />
+				</GridContainer>
+			</article>
+		</PlacesProvider>
 	)
 }
 
