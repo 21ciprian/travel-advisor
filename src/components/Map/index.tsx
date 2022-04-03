@@ -5,7 +5,7 @@ import {MapSection} from './styles'
 // import {Rating} from '@mui/material'
 type Props = {}
 
-function Map({}: Props) {
+function Map({}: Props): JSX.Element {
 	const defaultProps = {
 		center: {
 			lat: 0,

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Form, Label, ListContainer, ListTitle, Option, Select} from './styles'
 type ListProps = {}
 
-function List({}: ListProps) {
+function List({}: ListProps): JSX.Element {
 	const [type, setType] = useState<string>('restaurants')
 	const [rating, setRating] = useState<string>('')
 	console.log('type: ', type)

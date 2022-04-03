@@ -12,7 +12,7 @@ import {
 } from './styles'
 type Props = {}
 
-function HeaderComponent({}: Props) {
+function HeaderComponent({}: Props): JSX.Element {
 	return (
 		<Header>
 			<Title>Travel Guide</Title>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 export const MapSection = styled.section`
 	height: 85vh;
-	width: 75%;
+	width: 75m%;
 	background-color: grey;
 `
