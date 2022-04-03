@@ -23,3 +23,7 @@ export interface Place {
 export enum Actions {
 	GET_PLACES = 'GET_PLACES',
 }
+export interface Action {
+	type: Actions
+	payload: Place
+}
