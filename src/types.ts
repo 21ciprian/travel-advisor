@@ -22,8 +22,20 @@ export interface Place {
 
 export enum Actions {
 	GET_PLACES = 'GET_PLACES',
+	GET_ERROR = 'GET_ERROR',
 }
 export interface Action {
 	type: Actions
-	payload: Place
+	payload: Place | Place[] | any
+}
+export interface State {
+	places: Place[]
+	error: null
+	loading: boolean
+}
+export interface InitialState extends State {
+	getPlacesData?: () => Promise<void>
+}
+export interface Children {
+	children: React.ReactNode
 }
